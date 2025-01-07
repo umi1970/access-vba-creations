@@ -20,7 +20,11 @@ const Navigation = () => {
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
-              <img src="/logo.png" alt="IPC 24 Logo" className="h-8 w-auto" />
+              <img 
+                src="/lovable-uploads/9e452872-5c69-4e9d-9529-32d82b212173.png" 
+                alt="IPC 24 Logo" 
+                className="h-8 w-auto" 
+              />
             </Link>
           </div>
           
