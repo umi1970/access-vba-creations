@@ -8,29 +8,29 @@ const Index = () => {
       icon: <Database className="h-12 w-12 text-ipc-blue" />,
       title: 'MS Access Datenbanken',
       description: 'Entwicklung und Optimierung von maßgeschneiderten Access-Datenbanklösungen',
-      image: '/photo-1488590528505-98d2b5aba04b'
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b'
     },
     {
       icon: <Code className="h-12 w-12 text-ipc-blue" />,
       title: 'VBA Programmierung',
       description: 'Professionelle Entwicklung von VBA-Code und Makros für Office-Anwendungen',
-      image: '/photo-1461749280684-dccba630e2f6'
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6'
     },
     {
       icon: <FileSpreadsheet className="h-12 w-12 text-ipc-blue" />,
       title: 'Office Add-ins',
       description: 'Individuelle Add-ins zur Erweiterung Ihrer Office-Anwendungen',
-      image: '/photo-1486312338219-ce68d2c6f44d'
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d'
     }
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section mit großem Hintergrundbild */}
+      {/* Hero Section mit professionellem Hintergrundbild */}
       <section 
         className="relative h-[80vh] bg-cover bg-center flex items-center"
         style={{
-          backgroundImage: 'url("/photo-1487058792275-0ad4aaf24ca7")',
+          backgroundImage: 'url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -126,7 +126,7 @@ const Index = () => {
               className="rounded-lg overflow-hidden shadow-lg"
             >
               <img
-                src="/photo-1519389950473-47ba0277781c"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
                 alt="Team Collaboration"
                 className="w-full h-auto"
               />
