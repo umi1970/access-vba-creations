@@ -21,7 +21,7 @@ const Navigation = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
               <img 
-                src="/lovable-uploads/9e452872-5c69-4e9d-9529-32d82b212173.png" 
+                src="/lovable-uploads/e0c83837-104f-42ed-a3a7-f2fe24f6b4bb.png" 
                 alt="IPC 24 Logo" 
                 className="h-8 w-auto" 
               />
