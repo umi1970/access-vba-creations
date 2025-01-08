@@ -31,7 +31,7 @@ const Contact = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // You'll need to sign up at web3forms.com for a key
+          access_key: "2fc83721-d33d-45e7-9062-413ff028d6ec",
           name: formData.name,
           email: formData.email,
           message: formData.message,
@@ -42,6 +42,7 @@ const Contact = () => {
       });
 
       const data = await response.json();
+      console.log('Response from web3forms:', data);
 
       if (data.success) {
         toast({
@@ -56,7 +57,7 @@ const Contact = () => {
       console.error('Error sending message:', error);
       toast({
         title: "Fehler",
-        description: "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+        description: "Beim Senden der Nachricht ist ein Fehler aufge es später erneut.",
         variant: "destructive"
       });
     } finally {
