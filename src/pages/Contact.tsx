@@ -57,7 +57,7 @@ const Contact = () => {
       console.error('Error sending message:', error);
       toast({
         title: "Fehler",
-        description: "Beim Senden der Nachricht ist ein Fehler aufge es später erneut.",
+        description: "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
         variant: "destructive"
       });
     } finally {
@@ -87,33 +87,35 @@ const Contact = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="space-y-8"
+            className="bg-white p-8 rounded-xl shadow-lg"
           >
-            <div className="flex items-start space-x-4">
-              <Phone className="w-6 h-6 text-ipc-blue mt-1" />
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">Telefon</h3>
-                <p className="text-gray-600">+49 1590 6194455</p>
+            <div className="space-y-8">
+              <div className="flex items-start space-x-4">
+                <Phone className="w-6 h-6 text-ipc-blue mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Telefon</h3>
+                  <p className="text-gray-600">+49 1590 6194455</p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4">
-              <MapPin className="w-6 h-6 text-ipc-blue mt-1" />
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">Adresse</h3>
-                <p className="text-gray-600">
-                  Erzbergerstraße 28<br />
-                  68753 Waghäusel<br />
-                  Deutschland
-                </p>
+              <div className="flex items-start space-x-4">
+                <MapPin className="w-6 h-6 text-ipc-blue mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">Adresse</h3>
+                  <p className="text-gray-600">
+                    Erzbergerstraße 28<br />
+                    68753 Waghäusel<br />
+                    Deutschland
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start space-x-4">
-              <Mail className="w-6 h-6 text-ipc-blue mt-1" />
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">E-Mail</h3>
-                <p className="text-gray-600">u.zobu@ipc24.de</p>
+              <div className="flex items-start space-x-4">
+                <Mail className="w-6 h-6 text-ipc-blue mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">E-Mail</h3>
+                  <p className="text-gray-600">u.zobu@ipc24.de</p>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -122,45 +124,46 @@ const Contact = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
+            className="bg-white p-8 rounded-xl shadow-lg"
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Name
                 </label>
                 <input
                   type="text"
                   id="name"
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-ipc-blue focus:ring-ipc-blue"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-ipc-blue focus:border-transparent transition duration-200 text-base"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   E-Mail
                 </label>
                 <input
                   type="email"
                   id="email"
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-ipc-blue focus:ring-ipc-blue"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-ipc-blue focus:border-transparent transition duration-200 text-base"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   Nachricht
                 </label>
                 <textarea
                   id="message"
                   required
-                  rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-ipc-blue focus:ring-ipc-blue"
+                  rows={6}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-ipc-blue focus:border-transparent transition duration-200 text-base resize-none"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 />
@@ -168,7 +171,7 @@ const Contact = () => {
 
               <Button
                 type="submit"
-                className="w-full bg-ipc-blue hover:bg-ipc-blue/90"
+                className="w-full bg-ipc-blue hover:bg-ipc-blue/90 text-white py-4 rounded-lg text-lg font-medium transition duration-200"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? 'Wird gesendet...' : 'Nachricht senden'}
