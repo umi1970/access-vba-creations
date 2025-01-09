@@ -56,7 +56,19 @@ const translations = {
     'services.admin.aiIntegration': 'KI-Integration',
     'services.admin.aiIntegration.desc': 'Implementierung moderner KI-Lösungen',
     'services.admin.automation': 'Automatisierung',
-    'services.admin.automation.desc': 'Scripting und Prozessautomatisierung'
+    'services.admin.automation.desc': 'Scripting und Prozessautomatisierung',
+    'index.hero.title': 'Professionelle IT-Lösungen',
+    'index.hero.subtitle': 'Maßgeschneiderte Datenbank- und Softwarelösungen für Ihr Unternehmen',
+    'index.hero.cta': 'Kontaktieren Sie uns',
+    'index.services.database': 'Datenbank-Entwicklung',
+    'index.services.database.desc': 'Professionelle Entwicklung und Optimierung von Datenbanklösungen',
+    'index.services.vba': 'VBA Entwicklung',
+    'index.services.vba.desc': 'Automatisierung und Optimierung Ihrer Excel-Prozesse',
+    'index.services.addins': 'Excel Add-ins',
+    'index.services.addins.desc': 'Maßgeschneiderte Excel-Erweiterungen für Ihre Anforderungen',
+    'index.partner.title': 'Ihr Partner für IT-Lösungen',
+    'index.partner.desc': 'Mit über 10 Jahren Erfahrung entwickeln wir professionelle Lösungen für Ihr Unternehmen',
+    'index.partner.link': 'Unsere Leistungen entdecken'
   },
   en: {
     'nav.home': 'Home',
@@ -105,8 +117,20 @@ const translations = {
     'services.admin.aiIntegration': 'AI Integration',
     'services.admin.aiIntegration.desc': 'Implementation of modern AI solutions',
     'services.admin.automation': 'Automation',
-    'services.admin.automation.desc': 'Scripting and process automation'
-  },
+    'services.admin.automation.desc': 'Scripting and process automation',
+    'index.hero.title': 'Professional IT Solutions',
+    'index.hero.subtitle': 'Custom database and software solutions for your business',
+    'index.hero.cta': 'Contact Us',
+    'index.services.database': 'Database Development',
+    'index.services.database.desc': 'Professional development and optimization of database solutions',
+    'index.services.vba': 'VBA Development',
+    'index.services.vba.desc': 'Automation and optimization of your Excel processes',
+    'index.services.addins': 'Excel Add-ins',
+    'index.services.addins.desc': 'Custom Excel extensions for your requirements',
+    'index.partner.title': 'Your IT Solutions Partner',
+    'index.partner.desc': 'With over 10 years of experience, we develop professional solutions for your business',
+    'index.partner.link': 'Discover Our Services'
+  }
 } as const;
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
