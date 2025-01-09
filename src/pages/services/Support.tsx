@@ -1,27 +1,30 @@
 import { motion } from 'framer-motion';
 import { HeadsetIcon, Users, Clock, CheckCircle2, Bot } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Support = () => {
+  const { t } = useLanguage();
+
   const features = [
     {
       icon: <HeadsetIcon className="h-8 w-8 text-ipc-blue" />,
-      title: "First-Level Support",
-      description: "Schnelle und kompetente Hilfe bei allen IT-Problemen"
+      title: t('services.support.firstLevel'),
+      description: t('services.support.firstLevel.desc')
     },
     {
       icon: <Users className="h-8 w-8 text-ipc-blue" />,
-      title: "Vor-Ort Service",
-      description: "Persönliche Unterstützung direkt an Ihrem Arbeitsplatz"
+      title: t('services.support.onsite'),
+      description: t('services.support.onsite.desc')
     },
     {
       icon: <Clock className="h-8 w-8 text-ipc-blue" />,
-      title: "Schnelle Reaktionszeiten",
-      description: "Garantierte Reaktionszeiten für minimale Ausfallzeiten"
+      title: t('services.support.response'),
+      description: t('services.support.response.desc')
     },
     {
       icon: <Bot className="h-8 w-8 text-ipc-blue" />,
-      title: "KI-gestützte Lösungen",
-      description: "Moderne Technologien für effiziente Problemlösung"
+      title: t('services.support.ai'),
+      description: t('services.support.ai.desc')
     }
   ];
 
@@ -44,10 +47,10 @@ const Support = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            IT Support & Helpdesk
+            {t('services.support.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professioneller IT-Support mit über 7 Jahren Erfahrung im Helpdesk-Bereich
+            {t('services.support.subtitle')}
           </p>
         </motion.div>
 
@@ -78,15 +81,15 @@ const Support = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-8"
         >
           <div className="bg-gradient-to-r from-blue-50 to-white p-8 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-bold mb-6">Unsere Support-Leistungen</h2>
+            <h2 className="text-2xl font-bold mb-6">Support Services</h2>
             <div className="space-y-4">
               {[
                 "Helpdesk & Remote Support",
-                "Vor-Ort Service & Beratung",
-                "Software-Installation & Konfiguration",
-                "Problemanalyse & Fehlerbehebung",
-                "Benutzerverwaltung & Berechtigungen",
-                "Dokumentation & Reporting"
+                "On-Site Service & Consulting",
+                "Software Installation & Configuration",
+                "Problem Analysis & Troubleshooting",
+                "User Management & Permissions",
+                "Documentation & Reporting"
               ].map((service, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-ipc-blue" />
@@ -97,7 +100,7 @@ const Support = () => {
           </div>
 
           <div className="bg-white p-8 rounded-xl shadow-sm">
-            <h2 className="text-2xl font-bold mb-6">Eingesetzte Tools</h2>
+            <h2 className="text-2xl font-bold mb-6">Tools</h2>
             <div className="grid grid-cols-2 gap-4">
               {tools.map((tool, index) => (
                 <div

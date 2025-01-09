@@ -1,30 +1,33 @@
 import { motion } from 'framer-motion';
 import { Laptop, Server, Shield, Network, Bot, Code } from 'lucide-react';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 const Admin = () => {
+  const { t } = useLanguage();
+
   const services = [
     {
       icon: <Laptop className="h-8 w-8 text-ipc-blue" />,
-      title: "Workstation Administration",
-      description: "Installation, Konfiguration und Wartung von Arbeitsplatzrechnern",
+      title: t('services.admin.workstation'),
+      description: t('services.admin.workstation.desc'),
       experience: "9+ Jahre"
     },
     {
       icon: <Server className="h-8 w-8 text-ipc-blue" />,
-      title: "Server Management",
-      description: "Windows Server Administration und Wartung",
+      title: t('services.admin.server'),
+      description: t('services.admin.server.desc'),
       experience: "6+ Jahre"
     },
     {
       icon: <Shield className="h-8 w-8 text-ipc-blue" />,
-      title: "Security Administration",
-      description: "Implementierung und Überwachung von Sicherheitsrichtlinien",
+      title: t('services.admin.security'),
+      description: t('services.admin.security.desc'),
       experience: "5+ Jahre"
     },
     {
       icon: <Network className="h-8 w-8 text-ipc-blue" />,
-      title: "Netzwerk Management",
-      description: "Verwaltung und Optimierung von Netzwerkinfrastrukturen",
+      title: t('services.admin.network'),
+      description: t('services.admin.network.desc'),
       experience: "7+ Jahre"
     }
   ];
@@ -39,10 +42,10 @@ const Admin = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Systemadministration
+            {t('services.admin.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professionelle IT-Administration mit langjähriger Erfahrung
+            {t('services.admin.subtitle')}
           </p>
         </motion.div>
 
@@ -63,7 +66,7 @@ const Admin = () => {
                   <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
                   <p className="text-gray-600 mb-2">{service.description}</p>
                   <span className="text-sm text-ipc-blue font-medium">
-                    Erfahrung: {service.experience}
+                    {t('services.database.experience')}: {service.experience}
                   </span>
                 </div>
               </div>
@@ -78,7 +81,7 @@ const Admin = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="bg-gradient-to-r from-blue-50 to-white p-8 rounded-xl shadow-sm"
           >
-            <h2 className="text-2xl font-bold mb-6">Technologien & Tools</h2>
+            <h2 className="text-2xl font-bold mb-6">Technologies & Tools</h2>
             <div className="grid grid-cols-2 gap-4">
               {[
                 "Windows Server",
@@ -106,20 +109,20 @@ const Admin = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="bg-white p-8 rounded-xl shadow-sm"
           >
-            <h2 className="text-2xl font-bold mb-6">Zusätzliche Services</h2>
+            <h2 className="text-2xl font-bold mb-6">Additional Services</h2>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <Bot className="h-6 w-6 text-ipc-orange" />
                 <div>
-                  <h3 className="font-semibold">KI-Integration</h3>
-                  <p className="text-gray-600">Implementierung moderner KI-Lösungen</p>
+                  <h3 className="font-semibold">{t('services.admin.aiIntegration')}</h3>
+                  <p className="text-gray-600">{t('services.admin.aiIntegration.desc')}</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <Code className="h-6 w-6 text-ipc-orange" />
                 <div>
-                  <h3 className="font-semibold">Automatisierung</h3>
-                  <p className="text-gray-600">Scripting und Prozessautomatisierung</p>
+                  <h3 className="font-semibold">{t('services.admin.automation')}</h3>
+                  <p className="text-gray-600">{t('services.admin.automation.desc')}</p>
                 </div>
               </div>
             </div>
