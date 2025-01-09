@@ -1,46 +1,36 @@
 import { motion } from 'framer-motion';
-import { Database, Code, FileSpreadsheet, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Database, Laptop, HeadsetIcon, Code, Bot, Shield, Server, Network } from 'lucide-react';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 const Services = () => {
   const services = [
     {
-      icon: <Database className="h-16 w-16 text-ipc-blue mb-4" />,
-      title: 'MS Access Datenbanken',
-      description: 'Professionelle Entwicklung von Datenbanklösungen',
-      features: [
-        'Maßgeschneiderte Datenbankentwicklung',
-        'Optimierung bestehender Datenbanken',
-        'Benutzerfreundliche Oberflächen',
-        'Datenimport und -export Lösungen'
-      ]
+      icon: <Database className="h-12 w-12 text-ipc-blue" />,
+      title: "Datenbank-Entwicklung",
+      description: "Professionelle Entwicklung und Optimierung von Datenbanklösungen",
+      path: "/services/database",
+      skills: ["SQL Server", "MS Access", "MySQL", "Datenbankdesign"]
     },
     {
-      icon: <Code className="h-16 w-16 text-ipc-blue mb-4" />,
-      title: 'VBA Programmierung',
-      description: 'Automatisierung und Optimierung Ihrer Prozesse',
-      features: [
-        'Entwicklung von VBA-Makros',
-        'Prozessautomatisierung',
-        'Individuelle Funktionserweiterungen',
-        'Fehlerbehandlung und Debugging'
-      ]
+      icon: <HeadsetIcon className="h-12 w-12 text-ipc-blue" />,
+      title: "IT Support & Helpdesk",
+      description: "Umfassender technischer Support und Problemlösung",
+      path: "/services/support",
+      skills: ["Helpdesk", "Problemanalyse", "Systemadministration"]
     },
     {
-      icon: <FileSpreadsheet className="h-16 w-16 text-ipc-blue mb-4" />,
-      title: 'Office Add-ins',
-      description: 'Erweitern Sie die Funktionalität Ihrer Office-Anwendungen',
-      features: [
-        'Individuelle Excel Add-ins',
-        'Word Dokumentenautomatisierung',
-        'Outlook Erweiterungen',
-        'Integration in bestehende Systeme'
-      ]
+      icon: <Laptop className="h-12 w-12 text-ipc-blue" />,
+      title: "Systemadministration",
+      description: "Professionelle Verwaltung und Wartung von IT-Infrastrukturen",
+      path: "/services/admin",
+      skills: ["Windows Server", "Active Directory", "Rollout"]
     }
   ];
 
   return (
-    <div className="min-h-screen pt-16 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div className="min-h-screen pt-24 pb-12 bg-gradient-to-b from-white to-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,48 +40,47 @@ const Services = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Unsere Leistungen
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Professionelle IT-Lösungen für Ihre individuellen Anforderungen
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Professionelle IT-Lösungen mit über 10 Jahren Erfahrung, 
+            ergänzt durch moderne KI-gestützte Technologien
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
             >
-              <div className="p-8">
-                <div className="flex justify-center items-center h-24 w-24 rounded-full bg-blue-50 mx-auto mb-6">
-                  {service.icon}
-                </div>
-                <h2 className="text-2xl font-semibold text-gray-900 text-center mb-4">
-                  {service.title}
-                </h2>
-                <p className="text-gray-600 text-center mb-6">
-                  {service.description}
-                </p>
-                <div className="space-y-3">
-                  {service.features.map((feature, featureIndex) => (
-                    <div
-                      key={featureIndex}
-                      className="flex items-center space-x-3 group"
-                    >
-                      <ArrowRight className="h-5 w-5 text-ipc-orange transform group-hover:translate-x-1 transition-transform" />
-                      <span className="text-gray-700">{feature}</span>
+              <Link to={service.path}>
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300 cursor-pointer group">
+                  <CardHeader>
+                    <div className="mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                      {service.icon}
                     </div>
-                  ))}
-                </div>
-              </div>
-              <div className="px-8 py-4 bg-gradient-to-r from-ipc-blue to-blue-600">
-                <button className="w-full text-white py-2 rounded-lg hover:bg-white/10 transition-colors duration-200 flex items-center justify-center space-x-2">
-                  <span>Mehr erfahren</span>
-                  <ArrowRight className="h-4 w-4" />
-                </button>
-              </div>
+                    <CardTitle className="text-2xl font-bold text-center text-gray-900">
+                      {service.title}
+                    </CardTitle>
+                    <CardDescription className="text-center text-gray-600">
+                      {service.description}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {service.skills.map((skill, skillIndex) => (
+                        <span
+                          key={skillIndex}
+                          className="px-3 py-1 bg-blue-100 text-ipc-blue rounded-full text-sm"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             </motion.div>
           ))}
         </div>
@@ -100,11 +89,28 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-16 text-center"
+          className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Unsere maßgeschneiderten Lösungen helfen Ihnen dabei, Ihre Geschäftsprozesse zu optimieren und die Produktivität zu steigern. Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch.
-          </p>
+          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+            <Bot className="h-8 w-8 text-ipc-orange mb-4" />
+            <h3 className="text-lg font-semibold mb-2">KI-Integration</h3>
+            <p className="text-center text-gray-600">Moderne KI-Lösungen für optimierte Prozesse</p>
+          </div>
+          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+            <Shield className="h-8 w-8 text-ipc-orange mb-4" />
+            <h3 className="text-lg font-semibold mb-2">IT-Sicherheit</h3>
+            <p className="text-center text-gray-600">Umfassende Sicherheitslösungen</p>
+          </div>
+          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+            <Server className="h-8 w-8 text-ipc-orange mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Server-Management</h3>
+            <p className="text-center text-gray-600">Professionelle Serververwaltung</p>
+          </div>
+          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+            <Network className="h-8 w-8 text-ipc-orange mb-4" />
+            <h3 className="text-lg font-semibold mb-2">Netzwerk-Services</h3>
+            <p className="text-center text-gray-600">Optimierte Netzwerklösungen</p>
+          </div>
         </motion.div>
       </div>
     </div>

@@ -7,6 +7,9 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
+import Database from "./pages/services/Database";
+import Support from "./pages/services/Support";
+import Admin from "./pages/services/Admin";
 import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
@@ -23,6 +26,9 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/services/database" element={<Database />} />
+              <Route path="/services/support" element={<Support />} />
+              <Route path="/services/admin" element={<Admin />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
