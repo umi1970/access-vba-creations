@@ -1,32 +1,34 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Database, Code, FileSpreadsheet } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Index = () => {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: <Database className="h-12 w-12 text-ipc-blue" />,
-      title: 'MS Access Datenbanken',
-      description: 'Entwicklung und Optimierung von maßgeschneiderten Access-Datenbanklösungen',
+      title: t('index.services.database'),
+      description: t('index.services.database.desc'),
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b'
     },
     {
       icon: <Code className="h-12 w-12 text-ipc-blue" />,
-      title: 'VBA Programmierung',
-      description: 'Professionelle Entwicklung von VBA-Code und Makros für Office-Anwendungen',
+      title: t('index.services.vba'),
+      description: t('index.services.vba.desc'),
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6'
     },
     {
       icon: <FileSpreadsheet className="h-12 w-12 text-ipc-blue" />,
-      title: 'Office Add-ins',
-      description: 'Individuelle Add-ins zur Erweiterung Ihrer Office-Anwendungen',
+      title: t('index.services.addins'),
+      description: t('index.services.addins.desc'),
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d'
     }
   ];
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section mit professionellem Hintergrundbild */}
       <section 
         className="relative h-[80vh] bg-cover bg-center flex items-center"
         style={{
@@ -35,7 +37,7 @@ const Index = () => {
           backgroundPosition: 'center'
         }}
       >
-        <div className="absolute inset-0 bg-black/50" /> {/* Overlay für bessere Lesbarkeit */}
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -44,23 +46,22 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              IT Solutions für Ihr Unternehmen
+              {t('index.hero.title')}
             </h1>
             <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Professionelle Entwicklung von MS Access Datenbanken, VBA Code und Office Add-ins
+              {t('index.hero.subtitle')}
             </p>
             <Link
               to="/contact"
               className="inline-flex items-center px-8 py-4 bg-ipc-blue text-white rounded-md hover:bg-blue-600 transition-colors duration-200"
             >
-              Kontakt aufnehmen
+              {t('index.hero.cta')}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </motion.div>
         </div>
       </section>
 
-      {/* Services Section mit Bildern */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -95,7 +96,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Zusätzliche Sektion mit Teamwork-Bild */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -105,17 +105,16 @@ const Index = () => {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Ihr Partner für professionelle IT-Lösungen
+                {t('index.partner.title')}
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Mit jahrelanger Erfahrung in der Entwicklung von maßgeschneiderten Softwarelösungen 
-                unterstützen wir Sie bei der Digitalisierung Ihrer Geschäftsprozesse.
+                {t('index.partner.desc')}
               </p>
               <Link
                 to="/services"
                 className="inline-flex items-center text-ipc-blue hover:text-blue-700"
               >
-                Mehr über unsere Leistungen
+                {t('index.partner.link')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </motion.div>
