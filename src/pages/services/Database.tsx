@@ -1,28 +1,28 @@
 import { motion } from 'framer-motion';
-import { Database, Server, Code, FileSpreadsheet } from 'lucide-react';
+import { Database as DatabaseIcon, Server, Code, FileSpreadsheet } from 'lucide-react';
 
-const Database = () => {
+const DatabasePage = () => {
   const expertise = [
     {
-      icon: <Database className="h-8 w-8 text-ipc-blue" />,
+      icon: <div className="h-8 w-8 text-ipc-blue"><DatabaseIcon /></div>,
       title: "Datenbankentwicklung",
       description: "Entwicklung und Optimierung von SQL Server, MS Access und MySQL Datenbanken",
       experience: "11+ Jahre"
     },
     {
-      icon: <Server className="h-8 w-8 text-ipc-blue" />,
+      icon: <div className="h-8 w-8 text-ipc-blue"><Server /></div>,
       title: "SQL Server Management",
       description: "Umfassende Erfahrung mit SQL Server 2003-2012",
       experience: "10+ Jahre"
     },
     {
-      icon: <Code className="h-8 w-8 text-ipc-blue" />,
+      icon: <div className="h-8 w-8 text-ipc-blue"><Code /></div>,
       title: "Datenbankprogrammierung",
       description: "VB.NET und SQL Entwicklung",
       experience: "10+ Jahre"
     },
     {
-      icon: <FileSpreadsheet className="h-8 w-8 text-ipc-blue" />,
+      icon: <div className="h-8 w-8 text-ipc-blue"><FileSpreadsheet /></div>,
       title: "MS Access Spezialist",
       description: "Entwicklung von maßgeschneiderten Access-Lösungen",
       experience: "10+ Jahre"
@@ -113,4 +113,4 @@ const Database = () => {
   );
 };
 
-export default Database;
+export default DatabasePage;
