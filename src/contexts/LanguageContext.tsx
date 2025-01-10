@@ -52,6 +52,18 @@ const translations = {
     'services.web.security.desc': 'Umfassende Sicherheitslösungen für Ihre Website',
     'services.web.responsive': 'Responsive Design',
     'services.web.responsive.desc': 'Optimale Darstellung auf allen Endgeräten',
+    'index.hero.title': 'Professionelle IT-Lösungen',
+    'index.hero.subtitle': 'Maßgeschneiderte Entwicklung für Ihr Unternehmen',
+    'index.hero.cta': 'Kontaktieren Sie uns',
+    'index.services.database': 'Datenbank-Entwicklung',
+    'index.services.database.desc': 'Professionelle Datenbankentwicklung und -verwaltung',
+    'index.services.vba': 'VBA Entwicklung',
+    'index.services.vba.desc': 'Automatisierung und Optimierung Ihrer Excel-Prozesse',
+    'index.services.addins': 'Excel Add-ins',
+    'index.services.addins.desc': 'Individuelle Excel-Erweiterungen für Ihre Anforderungen',
+    'index.partner.title': 'Ihr Partner für digitale Lösungen',
+    'index.partner.desc': 'Wir unterstützen Sie bei der Digitalisierung Ihrer Geschäftsprozesse',
+    'index.partner.link': 'Unsere Leistungen entdecken'
   },
   en: {
     'nav.home': 'Home',
@@ -96,6 +108,18 @@ const translations = {
     'services.web.security.desc': 'Comprehensive security solutions for your website',
     'services.web.responsive': 'Responsive Design',
     'services.web.responsive.desc': 'Optimal display on all devices',
+    'index.hero.title': 'Professional IT Solutions',
+    'index.hero.subtitle': 'Custom Development for Your Business',
+    'index.hero.cta': 'Contact Us',
+    'index.services.database': 'Database Development',
+    'index.services.database.desc': 'Professional database development and management',
+    'index.services.vba': 'VBA Development',
+    'index.services.vba.desc': 'Automation and optimization of your Excel processes',
+    'index.services.addins': 'Excel Add-ins',
+    'index.services.addins.desc': 'Custom Excel extensions for your requirements',
+    'index.partner.title': 'Your Partner for Digital Solutions',
+    'index.partner.desc': 'We support you in digitalizing your business processes',
+    'index.partner.link': 'Discover Our Services'
   }
 } as const;
 
