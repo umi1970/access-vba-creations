@@ -9,15 +9,15 @@ const Index = () => {
   const services = [
     {
       icon: <Database className="h-12 w-12 text-white" />,
-      title: t('services.database.title'),
-      description: t('services.database.subtitle'),
+      title: t('index.services.database'),
+      description: t('index.services.database.desc'),
       path: "/services/database",
       gradient: "bg-gradient-to-r from-blue-500 to-cyan-500"
     },
     {
       icon: <Code className="h-12 w-12 text-white" />,
-      title: t('services.database.development'),
-      description: t('services.database.customSolutions'),
+      title: t('index.services.vba'),
+      description: t('index.services.vba.desc'),
       path: "/services/vba",
       gradient: "bg-gradient-to-r from-purple-500 to-pink-500"
     },
