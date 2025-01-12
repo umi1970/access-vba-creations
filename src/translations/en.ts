@@ -23,6 +23,7 @@ export const enTranslations: Translations = {
   'services.database.bestPractices': 'Best Practices',
   'services.database.training': 'Training',
   'services.database.support': 'Support & Maintenance',
+  'services.database.experience': 'Experience',
   'services.web.title': 'Web Development & Presence',
   'services.web.subtitle': 'Modern web solutions for your business',
   'services.web.planning': 'Planning',
@@ -63,6 +64,10 @@ export const enTranslations: Translations = {
   'services.support.firstLevel.desc': 'Quick and efficient help for everyday IT issues',
   'services.support.onsite': 'On-site Support',
   'services.support.onsite.desc': 'Personal support directly at your location',
+  'services.support.response': 'Response Time',
+  'services.support.response.desc': 'Fast and reliable response times',
+  'services.support.ai': 'AI Support',
+  'services.support.ai.desc': 'Modern AI-powered support solutions',
   'services.admin.title': 'System Administration',
   'services.admin.subtitle': 'Professional management and maintenance of IT infrastructures',
   'services.admin.workstation': 'Workstation Management',
@@ -72,5 +77,9 @@ export const enTranslations: Translations = {
   'services.admin.security': 'IT Security',
   'services.admin.security.desc': 'Comprehensive security solutions for your IT infrastructure',
   'services.admin.network': 'Network Administration',
-  'services.admin.network.desc': 'Management and optimization of your network infrastructure'
+  'services.admin.network.desc': 'Management and optimization of your network infrastructure',
+  'services.admin.aiIntegration': 'AI Integration',
+  'services.admin.aiIntegration.desc': 'Integration of AI solutions into existing systems',
+  'services.admin.automation': 'Automation',
+  'services.admin.automation.desc': 'Automation of administrative tasks'
 };

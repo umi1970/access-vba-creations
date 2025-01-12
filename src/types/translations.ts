@@ -21,6 +21,7 @@ export type TranslationKey =
   | 'services.database.bestPractices'
   | 'services.database.training'
   | 'services.database.support'
+  | 'services.database.experience'
   | 'services.web.title'
   | 'services.web.subtitle'
   | 'services.web.planning'
@@ -61,6 +62,10 @@ export type TranslationKey =
   | 'services.support.firstLevel.desc'
   | 'services.support.onsite'
   | 'services.support.onsite.desc'
+  | 'services.support.response'
+  | 'services.support.response.desc'
+  | 'services.support.ai'
+  | 'services.support.ai.desc'
   | 'services.admin.title'
   | 'services.admin.subtitle'
   | 'services.admin.workstation'
@@ -70,7 +75,11 @@ export type TranslationKey =
   | 'services.admin.security'
   | 'services.admin.security.desc'
   | 'services.admin.network'
-  | 'services.admin.network.desc';
+  | 'services.admin.network.desc'
+  | 'services.admin.aiIntegration'
+  | 'services.admin.aiIntegration.desc'
+  | 'services.admin.automation'
+  | 'services.admin.automation.desc';
 
 export type Translations = {
   [key in TranslationKey]: string;

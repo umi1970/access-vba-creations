@@ -23,6 +23,7 @@ export const deTranslations: Translations = {
   'services.database.bestPractices': 'Best Practices',
   'services.database.training': 'Schulungen',
   'services.database.support': 'Support & Wartung',
+  'services.database.experience': 'Erfahrung',
   'services.web.title': 'Web Entwicklung & Präsenz',
   'services.web.subtitle': 'Moderne Weblösungen für Ihr Unternehmen',
   'services.web.planning': 'Planung',
@@ -63,6 +64,10 @@ export const deTranslations: Translations = {
   'services.support.firstLevel.desc': 'Schnelle und effiziente Hilfe bei alltäglichen IT-Problemen',
   'services.support.onsite': 'Vor-Ort Support',
   'services.support.onsite.desc': 'Persönliche Unterstützung direkt bei Ihnen',
+  'services.support.response': 'Reaktionszeit',
+  'services.support.response.desc': 'Schnelle und zuverlässige Reaktionszeiten',
+  'services.support.ai': 'KI-Unterstützung',
+  'services.support.ai.desc': 'Moderne KI-gestützte Supportlösungen',
   'services.admin.title': 'Systemadministration',
   'services.admin.subtitle': 'Professionelle Verwaltung und Wartung von IT-Infrastrukturen',
   'services.admin.workstation': 'Arbeitsplatz-Management',
@@ -72,5 +77,9 @@ export const deTranslations: Translations = {
   'services.admin.security': 'IT-Sicherheit',
   'services.admin.security.desc': 'Umfassende Sicherheitslösungen für Ihre IT-Infrastruktur',
   'services.admin.network': 'Netzwerk-Administration',
-  'services.admin.network.desc': 'Verwaltung und Optimierung Ihrer Netzwerkinfrastruktur'
+  'services.admin.network.desc': 'Verwaltung und Optimierung Ihrer Netzwerkinfrastruktur',
+  'services.admin.aiIntegration': 'KI-Integration',
+  'services.admin.aiIntegration.desc': 'Integration von KI-Lösungen in bestehende Systeme',
+  'services.admin.automation': 'Automatisierung',
+  'services.admin.automation.desc': 'Automatisierung von Verwaltungsaufgaben'
 };
