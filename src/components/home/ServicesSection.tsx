@@ -1,4 +1,4 @@
-import { Database, Code, FileSpreadsheet, Globe } from 'lucide-react';
+import { Database, FileSpreadsheet, Globe, Bot } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import ServiceCard from './ServiceCard';
 
@@ -14,17 +14,17 @@ const ServicesSection = () => {
       gradient: "bg-gradient-to-r from-blue-500 to-cyan-500"
     },
     {
-      icon: <Code className="h-12 w-12 text-white" />,
-      title: t('index.services.vba'),
-      description: t('index.services.vba.desc'),
-      path: "/services/vba",
+      icon: <FileSpreadsheet className="h-12 w-12 text-white" />,
+      title: t('index.services.office'),
+      description: t('index.services.office.desc'),
+      path: "/services/office",
       gradient: "bg-gradient-to-r from-purple-500 to-pink-500"
     },
     {
-      icon: <FileSpreadsheet className="h-12 w-12 text-white" />,
-      title: t('index.services.addins'),
-      description: t('index.services.addins.desc'),
-      path: "/services/addins",
+      icon: <Bot className="h-12 w-12 text-white" />,
+      title: t('index.services.ai'),
+      description: t('index.services.ai.desc'),
+      path: "/services/ai",
       gradient: "bg-gradient-to-r from-green-500 to-emerald-500"
     },
     {
