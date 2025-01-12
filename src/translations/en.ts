@@ -81,5 +81,13 @@ export const enTranslations: Translations = {
   'services.admin.aiIntegration': 'AI Integration',
   'services.admin.aiIntegration.desc': 'Integration of AI solutions into existing systems',
   'services.admin.automation': 'Automation',
-  'services.admin.automation.desc': 'Automation of administrative tasks'
+  'services.admin.automation.desc': 'Automation of administrative tasks',
+  'services.security.title': 'IT Security',
+  'services.security.subtitle': 'Comprehensive security solutions',
+  'services.server.title': 'Server Management',
+  'services.server.subtitle': 'Professional server administration',
+  'services.network.title': 'Network Services',
+  'services.network.subtitle': 'Optimized network solutions',
+  'services.ai.title': 'AI Integration',
+  'services.ai.subtitle': 'Modern AI solutions for optimized processes'
 };
