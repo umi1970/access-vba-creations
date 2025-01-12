@@ -9,26 +9,22 @@ const DatabasePage = () => {
     {
       icon: <div className="h-8 w-8 text-ipc-blue"><DatabaseIcon /></div>,
       title: t('services.database.development'),
-      description: t('services.database.customSolutions'),
-      experience: "11+ Jahre"
+      description: t('services.database.customSolutions')
     },
     {
       icon: <div className="h-8 w-8 text-ipc-blue"><Server /></div>,
       title: t('services.database.administration'),
-      description: t('services.database.monitoring'),
-      experience: "10+ Jahre"
+      description: t('services.database.monitoring')
     },
     {
       icon: <div className="h-8 w-8 text-ipc-blue"><Code /></div>,
       title: t('services.database.consulting'),
-      description: t('services.database.architecture'),
-      experience: "10+ Jahre"
+      description: t('services.database.architecture')
     },
     {
       icon: <div className="h-8 w-8 text-ipc-blue"><FileSpreadsheet /></div>,
       title: t('services.database.training'),
-      description: t('services.database.bestPractices'),
-      experience: "10+ Jahre"
+      description: t('services.database.bestPractices')
     }
   ];
 
@@ -64,10 +60,7 @@ const DatabasePage = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-gray-600 mb-2">{item.description}</p>
-                  <span className="text-sm text-ipc-blue font-medium">
-                    {t('services.database.experience')}: {item.experience}
-                  </span>
+                  <p className="text-gray-600">{item.description}</p>
                 </div>
               </div>
             </motion.div>
