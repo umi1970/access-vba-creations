@@ -2,8 +2,11 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Database, Laptop, HeadsetIcon, Code, Bot, Shield, Server, Network } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Services = () => {
+  const { t } = useLanguage();
+
   const services = [
     {
       icon: <Database className="h-12 w-12 text-ipc-blue" />,
@@ -14,15 +17,15 @@ const Services = () => {
     },
     {
       icon: <HeadsetIcon className="h-12 w-12 text-ipc-blue" />,
-      title: "IT Support & Helpdesk",
-      description: "Umfassender technischer Support und Problemlösung",
+      title: t('services.support.title'),
+      description: t('services.support.subtitle'),
       path: "/services/support",
       skills: ["Helpdesk", "Problemanalyse", "Systemadministration"]
     },
     {
       icon: <Laptop className="h-12 w-12 text-ipc-blue" />,
-      title: "Systemadministration",
-      description: "Professionelle Verwaltung und Wartung von IT-Infrastrukturen",
+      title: t('services.admin.title'),
+      description: t('services.admin.subtitle'),
       path: "/services/admin",
       skills: ["Windows Server", "Active Directory", "Rollout"]
     }
@@ -38,11 +41,10 @@ const Services = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Unsere Leistungen
+            {t('services.title')}
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professionelle IT-Lösungen mit über 10 Jahren Erfahrung, 
-            ergänzt durch moderne KI-gestützte Technologien
+            {t('services.subtitle')}
           </p>
         </motion.div>
 

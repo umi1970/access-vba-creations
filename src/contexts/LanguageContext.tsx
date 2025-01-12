@@ -63,7 +63,25 @@ const translations = {
     'index.services.addins.desc': 'Individuelle Excel-Erweiterungen für Ihre Anforderungen',
     'index.partner.title': 'Ihr Partner für digitale Lösungen',
     'index.partner.desc': 'Wir unterstützen Sie bei der Digitalisierung Ihrer Geschäftsprozesse',
-    'index.partner.link': 'Unsere Leistungen entdecken'
+    'index.partner.link': 'Unsere Leistungen entdecken',
+    'services.title': 'Unsere Leistungen',
+    'services.subtitle': 'Professionelle IT-Lösungen mit über 10 Jahren Erfahrung, ergänzt durch moderne KI-gestützte Technologien',
+    'services.support.title': 'IT Support & Helpdesk',
+    'services.support.subtitle': 'Umfassender technischer Support und Problemlösung',
+    'services.support.firstLevel': 'First Level Support',
+    'services.support.firstLevel.desc': 'Schnelle und effiziente Hilfe bei alltäglichen IT-Problemen',
+    'services.support.onsite': 'Vor-Ort Support',
+    'services.support.onsite.desc': 'Persönliche Unterstützung direkt bei Ihnen',
+    'services.admin.title': 'Systemadministration',
+    'services.admin.subtitle': 'Professionelle Verwaltung und Wartung von IT-Infrastrukturen',
+    'services.admin.workstation': 'Arbeitsplatz-Management',
+    'services.admin.workstation.desc': 'Einrichtung und Verwaltung von Arbeitsplatzrechnern',
+    'services.admin.server': 'Server-Administration',
+    'services.admin.server.desc': 'Professionelle Verwaltung von Server-Systemen',
+    'services.admin.security': 'IT-Sicherheit',
+    'services.admin.security.desc': 'Umfassende Sicherheitslösungen für Ihre IT-Infrastruktur',
+    'services.admin.network': 'Netzwerk-Administration',
+    'services.admin.network.desc': 'Verwaltung und Optimierung Ihrer Netzwerkinfrastruktur'
   },
   en: {
     'nav.home': 'Home',
@@ -119,7 +137,25 @@ const translations = {
     'index.services.addins.desc': 'Custom Excel extensions for your requirements',
     'index.partner.title': 'Your Partner for Digital Solutions',
     'index.partner.desc': 'We support you in digitalizing your business processes',
-    'index.partner.link': 'Discover Our Services'
+    'index.partner.link': 'Discover Our Services',
+    'services.title': 'Our Services',
+    'services.subtitle': 'Professional IT solutions with over 10 years of experience, enhanced by modern AI-powered technologies',
+    'services.support.title': 'IT Support & Helpdesk',
+    'services.support.subtitle': 'Comprehensive technical support and problem solving',
+    'services.support.firstLevel': 'First Level Support',
+    'services.support.firstLevel.desc': 'Quick and efficient help for everyday IT issues',
+    'services.support.onsite': 'On-site Support',
+    'services.support.onsite.desc': 'Personal support directly at your location',
+    'services.admin.title': 'System Administration',
+    'services.admin.subtitle': 'Professional management and maintenance of IT infrastructures',
+    'services.admin.workstation': 'Workstation Management',
+    'services.admin.workstation.desc': 'Setup and management of workstation computers',
+    'services.admin.server': 'Server Administration',
+    'services.admin.server.desc': 'Professional management of server systems',
+    'services.admin.security': 'IT Security',
+    'services.admin.security.desc': 'Comprehensive security solutions for your IT infrastructure',
+    'services.admin.network': 'Network Administration',
+    'services.admin.network.desc': 'Management and optimization of your network infrastructure'
   }
 } as const;
 

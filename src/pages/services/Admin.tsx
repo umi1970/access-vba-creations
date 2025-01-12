@@ -9,26 +9,22 @@ const Admin = () => {
     {
       icon: <Laptop className="h-8 w-8 text-ipc-blue" />,
       title: t('services.admin.workstation'),
-      description: t('services.admin.workstation.desc'),
-      experience: "9+ Jahre"
+      description: t('services.admin.workstation.desc')
     },
     {
       icon: <Server className="h-8 w-8 text-ipc-blue" />,
       title: t('services.admin.server'),
-      description: t('services.admin.server.desc'),
-      experience: "6+ Jahre"
+      description: t('services.admin.server.desc')
     },
     {
       icon: <Shield className="h-8 w-8 text-ipc-blue" />,
       title: t('services.admin.security'),
-      description: t('services.admin.security.desc'),
-      experience: "5+ Jahre"
+      description: t('services.admin.security.desc')
     },
     {
       icon: <Network className="h-8 w-8 text-ipc-blue" />,
       title: t('services.admin.network'),
-      description: t('services.admin.network.desc'),
-      experience: "7+ Jahre"
+      description: t('services.admin.network.desc')
     }
   ];
 
@@ -64,10 +60,7 @@ const Admin = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                  <p className="text-gray-600 mb-2">{service.description}</p>
-                  <span className="text-sm text-ipc-blue font-medium">
-                    {t('services.database.experience')}: {service.experience}
-                  </span>
+                  <p className="text-gray-600">{service.description}</p>
                 </div>
               </div>
             </motion.div>
