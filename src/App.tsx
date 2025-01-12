@@ -11,6 +11,9 @@ import Services from "./pages/Services";
 import Database from "./pages/services/Database";
 import Support from "./pages/services/Support";
 import Admin from "./pages/services/Admin";
+import Web from "./pages/services/Web";
+import Office from "./pages/services/Office";
+import AI from "./pages/services/AI";
 import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
@@ -31,6 +34,9 @@ const App = () => (
                 <Route path="/services/database" element={<Database />} />
                 <Route path="/services/support" element={<Support />} />
                 <Route path="/services/admin" element={<Admin />} />
+                <Route path="/services/web" element={<Web />} />
+                <Route path="/services/office" element={<Office />} />
+                <Route path="/services/ai" element={<AI />} />
                 <Route path="/contact" element={<Contact />} />
               </Routes>
             </main>
