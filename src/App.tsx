@@ -11,6 +11,7 @@ import Support from './pages/services/Support';
 import Admin from './pages/services/Admin';
 import Database from './pages/services/Database';
 import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
 import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route path="/services/admin" element={<Admin />} />
               <Route path="/services/database" element={<Database />} />
               <Route path="/impressum" element={<Impressum />} />
+              <Route path="/datenschutz" element={<Datenschutz />} />
             </Routes>
           </main>
           <Footer />
