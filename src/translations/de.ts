@@ -116,5 +116,11 @@ export const deTranslations: Translations = {
   'services.support.skills.admin': 'Systemadministration',
   'services.admin.skills.windows': 'Windows Server',
   'services.admin.skills.ad': 'Active Directory',
-  'services.admin.skills.rollout': 'Rollout'
+  'services.admin.skills.rollout': 'Rollout',
+  'services.security.title': 'IT-Sicherheit',
+  'services.security.subtitle': 'Umfassende Sicherheitslösungen',
+  'services.server.title': 'Server-Management',
+  'services.server.subtitle': 'Professionelle Serververwaltung',
+  'services.network.title': 'Netzwerk-Services',
+  'services.network.subtitle': 'Optimierte Netzwerklösungen'
 };
