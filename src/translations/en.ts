@@ -107,10 +107,14 @@ export const enTranslations: Translations = {
   'services.database.security': 'Database Security',
   'services.database.tuning': 'Database Tuning',
   'services.database.support': 'Support & Maintenance',
-  'services.security.title': 'IT Security',
-  'services.security.subtitle': 'Comprehensive security solutions',
-  'services.server.title': 'Server Management',
-  'services.server.subtitle': 'Professional server administration',
-  'services.network.title': 'Network Services',
-  'services.network.subtitle': 'Optimized network solutions'
+  'services.database.skills.sql': 'SQL Server',
+  'services.database.skills.access': 'MS Access',
+  'services.database.skills.mysql': 'MySQL',
+  'services.database.skills.design': 'Database Design',
+  'services.support.skills.helpdesk': 'Helpdesk',
+  'services.support.skills.analysis': 'Problem Analysis',
+  'services.support.skills.admin': 'System Administration',
+  'services.admin.skills.windows': 'Windows Server',
+  'services.admin.skills.ad': 'Active Directory',
+  'services.admin.skills.rollout': 'Rollout'
 };
