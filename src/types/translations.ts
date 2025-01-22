@@ -104,7 +104,25 @@ export type TranslationKey =
   | 'services.database.backup'
   | 'services.database.security'
   | 'services.database.tuning'
-  | 'services.database.support';
+  | 'services.database.support'
+  | 'services.database.skills.sql'
+  | 'services.database.skills.access'
+  | 'services.database.skills.mysql'
+  | 'services.database.skills.design'
+  | 'services.support.skills.helpdesk'
+  | 'services.support.skills.analysis'
+  | 'services.support.skills.admin'
+  | 'services.admin.skills.windows'
+  | 'services.admin.skills.ad'
+  | 'services.admin.skills.rollout'
+  | 'services.ai.title'
+  | 'services.ai.subtitle'
+  | 'services.security.title'
+  | 'services.security.subtitle'
+  | 'services.server.title'
+  | 'services.server.subtitle'
+  | 'services.network.title'
+  | 'services.network.subtitle';
 
 export type Translations = {
   [key in TranslationKey]: string;
