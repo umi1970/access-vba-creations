@@ -7,28 +7,28 @@ const ServicesSection = () => {
 
   const services = [
     {
-      icon: <Database className="h-12 w-12 text-white" />,
+      icon: <Database className="h-12 w-12 text-blue-600" />,
       title: t('index.services.database'),
       description: t('index.services.database.desc'),
       path: "/services/database",
       gradient: "bg-gradient-to-r from-blue-500 to-cyan-500"
     },
     {
-      icon: <FileSpreadsheet className="h-12 w-12 text-white" />,
+      icon: <FileSpreadsheet className="h-12 w-12 text-purple-600" />,
       title: t('index.services.office'),
       description: t('index.services.office.desc'),
       path: "/services/office",
       gradient: "bg-gradient-to-r from-purple-500 to-pink-500"
     },
     {
-      icon: <Bot className="h-12 w-12 text-white" />,
+      icon: <Bot className="h-12 w-12 text-green-600" />,
       title: t('index.services.ai'),
       description: t('index.services.ai.desc'),
       path: "/services/ai",
       gradient: "bg-gradient-to-r from-green-500 to-emerald-500"
     },
     {
-      icon: <Globe className="h-12 w-12 text-white" />,
+      icon: <Globe className="h-12 w-12 text-orange-600" />,
       title: t('services.web.title'),
       description: t('services.web.subtitle'),
       path: "/services/web",

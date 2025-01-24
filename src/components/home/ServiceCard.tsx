@@ -19,15 +19,15 @@ const ServiceCard = ({ icon, title, description, path, gradient, index }: Servic
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
       <Link to={path}>
-        <div className={`h-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden ${gradient}`}>
+        <div className={`h-full rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden bg-white border border-gray-100`}>
           <div className="p-8">
-            <div className="flex items-center justify-center mb-6 bg-white/10 rounded-full w-20 h-20 mx-auto">
+            <div className="flex items-center justify-center mb-6 bg-gray-50 rounded-full w-20 h-20 mx-auto">
               {icon}
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4 text-center">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
               {title}
             </h3>
-            <p className="text-white/90 text-center">
+            <p className="text-gray-600 text-center">
               {description}
             </p>
           </div>

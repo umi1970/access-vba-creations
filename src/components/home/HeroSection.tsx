@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section 
       className="relative h-[80vh] bg-cover bg-center flex items-center"
       style={{
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1649972904349-6e44c42644a7")',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1497366216548-37526070297c")',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
