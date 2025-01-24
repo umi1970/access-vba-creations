@@ -114,5 +114,13 @@ export const enTranslations: Translations = {
   'services.office.templates': 'Templates',
   'services.office.templates.desc': 'Professional Office templates',
   'services.office.training': 'Training',
-  'services.office.training.desc': 'Individual Office training'
+  'services.office.training.desc': 'Individual Office training',
+  'services.ai.automation': 'AI Automation',
+  'services.ai.automation.desc': 'Intelligent process automation with AI',
+  'services.ai.analysis': 'AI Analysis',
+  'services.ai.analysis.desc': 'Data analysis and pattern recognition with AI',
+  'services.ai.integration': 'AI Integration',
+  'services.ai.integration.desc': 'Seamless integration of AI into existing systems',
+  'services.ai.chatbots': 'Chatbots',
+  'services.ai.chatbots.desc': 'Intelligent chatbots for customer service'
 };

@@ -114,5 +114,13 @@ export const deTranslations: Translations = {
   'services.office.templates': 'Vorlagen',
   'services.office.templates.desc': 'Professionelle Office-Vorlagen',
   'services.office.training': 'Schulungen',
-  'services.office.training.desc': 'Individuelle Office-Schulungen'
+  'services.office.training.desc': 'Individuelle Office-Schulungen',
+  'services.ai.automation': 'KI-Automatisierung',
+  'services.ai.automation.desc': 'Intelligente Prozessautomatisierung mit KI',
+  'services.ai.analysis': 'KI-Analyse',
+  'services.ai.analysis.desc': 'Datenanalyse und Mustererkennung mit KI',
+  'services.ai.integration': 'KI-Integration',
+  'services.ai.integration.desc': 'Nahtlose Integration von KI in bestehende Systeme',
+  'services.ai.chatbots': 'Chatbots',
+  'services.ai.chatbots.desc': 'Intelligente Chatbots für Kundenservice'
 };
