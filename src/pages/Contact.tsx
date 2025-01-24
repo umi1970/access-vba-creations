@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { useToast } from '@/components/ui/use-toast';
+import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -50,6 +50,7 @@ const Contact = () => {
         toast({
           title: t('contact.form.success'),
           description: t('contact.form.success.desc'),
+          duration: 5000,
         });
         setFormData({ name: '', email: '', message: '' });
       } else {
@@ -60,7 +61,8 @@ const Contact = () => {
       toast({
         title: t('contact.form.error'),
         description: t('contact.form.error.desc'),
-        variant: "destructive"
+        variant: "destructive",
+        duration: 5000,
       });
     } finally {
       setIsSubmitting(false);
