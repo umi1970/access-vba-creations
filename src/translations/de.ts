@@ -122,5 +122,19 @@ export const deTranslations: Translations = {
   'services.office.templates': 'Vorlagen',
   'services.office.templates.desc': 'Professionelle Office-Vorlagen',
   'services.office.training': 'Schulungen',
-  'services.office.training.desc': 'Individuelle Office-Schulungen'
+  'services.office.training.desc': 'Individuelle Office-Schulungen',
+  'contact.title': 'Kontaktieren Sie uns',
+  'contact.subtitle': 'Wir freuen uns auf Ihre Nachricht',
+  'contact.form.name': 'Name',
+  'contact.form.email': 'E-Mail',
+  'contact.form.message': 'Nachricht',
+  'contact.form.submit': 'Nachricht senden',
+  'contact.form.submitting': 'Wird gesendet...',
+  'contact.form.success': 'Nachricht gesendet',
+  'contact.form.success.desc': 'Vielen Dank für Ihre Nachricht. Wir werden uns schnellstmöglich bei Ihnen melden.',
+  'contact.form.error': 'Fehler',
+  'contact.form.error.desc': 'Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.',
+  'contact.info.phone': 'Telefon',
+  'contact.info.address': 'Adresse',
+  'contact.info.email': 'E-Mail'
 };

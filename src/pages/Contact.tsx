@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '../contexts/LanguageContext';
 
 interface FormData {
   name: string;
@@ -12,6 +13,7 @@ interface FormData {
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
@@ -46,8 +48,8 @@ const Contact = () => {
 
       if (data.success) {
         toast({
-          title: "Nachricht gesendet",
-          description: "Vielen Dank für Ihre Nachricht. Wir werden uns schnellstmöglich bei Ihnen melden.",
+          title: t('contact.form.success'),
+          description: t('contact.form.success.desc'),
         });
         setFormData({ name: '', email: '', message: '' });
       } else {
@@ -56,8 +58,8 @@ const Contact = () => {
     } catch (error) {
       console.error('Error sending message:', error);
       toast({
-        title: "Fehler",
-        description: "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+        title: t('contact.form.error'),
+        description: t('contact.form.error.desc'),
         variant: "destructive"
       });
     } finally {
@@ -75,10 +77,10 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Kontaktieren Sie uns
+            {t('contact.title')}
           </h1>
           <p className="text-xl text-gray-600">
-            Wir freuen uns auf Ihre Nachricht
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -93,7 +95,7 @@ const Contact = () => {
               <div className="flex items-start space-x-4">
                 <Phone className="w-6 h-6 text-ipc-blue mt-1" />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">Telefon</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">{t('contact.info.phone')}</h3>
                   <p className="text-gray-600">+49 1590 6194455</p>
                 </div>
               </div>
@@ -101,10 +103,10 @@ const Contact = () => {
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-ipc-blue mt-1" />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">Adresse</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">{t('contact.info.address')}</h3>
                   <p className="text-gray-600">
-                    Erzbergerstraße 28<br />
-                    68753 Waghäusel<br />
+                    {t('footer.address')}<br />
+                    {t('footer.city')}<br />
                     Deutschland
                   </p>
                 </div>
@@ -113,7 +115,7 @@ const Contact = () => {
               <div className="flex items-start space-x-4">
                 <Mail className="w-6 h-6 text-ipc-blue mt-1" />
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900">E-Mail</h3>
+                  <h3 className="text-lg font-semibold text-gray-900">{t('contact.info.email')}</h3>
                   <p className="text-gray-600">u.zobu@ipc24.de</p>
                 </div>
               </div>
@@ -129,7 +131,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Name
+                  {t('contact.form.name')}
                 </label>
                 <input
                   type="text"
@@ -143,7 +145,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  E-Mail
+                  {t('contact.form.email')}
                 </label>
                 <input
                   type="email"
@@ -157,7 +159,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Nachricht
+                  {t('contact.form.message')}
                 </label>
                 <textarea
                   id="message"
@@ -174,7 +176,7 @@ const Contact = () => {
                 className="w-full bg-ipc-blue hover:bg-ipc-blue/90 text-white py-4 rounded-lg text-lg font-medium transition duration-200"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Wird gesendet...' : 'Nachricht senden'}
+                {isSubmitting ? t('contact.form.submitting') : t('contact.form.submit')}
               </Button>
             </form>
           </motion.div>

@@ -120,7 +120,21 @@ export type TranslationKey =
   | 'services.office.templates'
   | 'services.office.templates.desc'
   | 'services.office.training'
-  | 'services.office.training.desc';
+  | 'services.office.training.desc'
+  | 'contact.title'
+  | 'contact.subtitle'
+  | 'contact.form.name'
+  | 'contact.form.email'
+  | 'contact.form.message'
+  | 'contact.form.submit'
+  | 'contact.form.submitting'
+  | 'contact.form.success'
+  | 'contact.form.success.desc'
+  | 'contact.form.error'
+  | 'contact.form.error.desc'
+  | 'contact.info.phone'
+  | 'contact.info.address'
+  | 'contact.info.email';
 
 export type Translations = {
   [key in TranslationKey]: string;

@@ -122,5 +122,19 @@ export const enTranslations: Translations = {
   'services.office.templates': 'Templates',
   'services.office.templates.desc': 'Professional Office templates',
   'services.office.training': 'Training',
-  'services.office.training.desc': 'Individual Office training'
+  'services.office.training.desc': 'Individual Office training',
+  'contact.title': 'Contact Us',
+  'contact.subtitle': 'We look forward to your message',
+  'contact.form.name': 'Name',
+  'contact.form.email': 'Email',
+  'contact.form.message': 'Message',
+  'contact.form.submit': 'Send Message',
+  'contact.form.submitting': 'Sending...',
+  'contact.form.success': 'Message Sent',
+  'contact.form.success.desc': 'Thank you for your message. We will get back to you as soon as possible.',
+  'contact.form.error': 'Error',
+  'contact.form.error.desc': 'An error occurred while sending the message. Please try again later.',
+  'contact.info.phone': 'Phone',
+  'contact.info.address': 'Address',
+  'contact.info.email': 'Email'
 };
