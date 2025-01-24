@@ -27,7 +27,7 @@ export const enTranslations: Translations = {
   'services.title': 'Our Services',
   'services.subtitle': 'Professional IT services for your success',
   'services.database.title': 'Database Development',
-  'services.database.subtitle': 'Professional Database Solutions',
+  'services.database.subtitle': 'Professional development and optimization of database solutions',
   'services.database.development': 'Development',
   'services.database.customSolutions': 'Custom Database Solutions',
   'services.database.administration': 'Administration',
