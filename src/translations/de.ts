@@ -104,5 +104,15 @@ export const deTranslations: Translations = {
   'services.web.security': 'Websicherheit',
   'services.web.security.desc': 'Umfassende Sicherheitslösungen für Ihre Website',
   'services.web.responsive': 'Responsive Design',
-  'services.web.responsive.desc': 'Optimale Darstellung auf allen Geräten'
+  'services.web.responsive.desc': 'Optimale Darstellung auf allen Geräten',
+  'services.office.title': 'Office Integration',
+  'services.office.subtitle': 'Professionelle Microsoft Office Lösungen',
+  'services.office.automation': 'Automatisierung',
+  'services.office.automation.desc': 'Automatisierung von Office-Prozessen',
+  'services.office.integration': 'Integration',
+  'services.office.integration.desc': 'Nahtlose Integration von Office-Anwendungen',
+  'services.office.templates': 'Vorlagen',
+  'services.office.templates.desc': 'Professionelle Office-Vorlagen',
+  'services.office.training': 'Schulungen',
+  'services.office.training.desc': 'Individuelle Office-Schulungen'
 };

@@ -104,5 +104,15 @@ export const enTranslations: Translations = {
   'services.web.security': 'Web Security',
   'services.web.security.desc': 'Comprehensive security solutions for your website',
   'services.web.responsive': 'Responsive Design',
-  'services.web.responsive.desc': 'Optimal display on all devices'
+  'services.web.responsive.desc': 'Optimal display on all devices',
+  'services.office.title': 'Office Integration',
+  'services.office.subtitle': 'Professional Microsoft Office Solutions',
+  'services.office.automation': 'Automation',
+  'services.office.automation.desc': 'Automation of Office processes',
+  'services.office.integration': 'Integration',
+  'services.office.integration.desc': 'Seamless integration of Office applications',
+  'services.office.templates': 'Templates',
+  'services.office.templates.desc': 'Professional Office templates',
+  'services.office.training': 'Training',
+  'services.office.training.desc': 'Individual Office training'
 };
