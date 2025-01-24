@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Database, Laptop, HeadsetIcon, Code, Bot, Shield, Server, Network } from 'lucide-react';
+import { Database, Laptop, HeadsetIcon, Bot, Shield, Server, Network } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -10,24 +10,60 @@ const Services = () => {
   const services = [
     {
       icon: <Database className="h-12 w-12 text-ipc-blue" />,
-      title: "Datenbank-Entwicklung",
-      description: "Professionelle Entwicklung und Optimierung von Datenbanklösungen",
+      title: t('services.database.title'),
+      description: t('services.database.subtitle'),
       path: "/services/database",
-      skills: ["SQL Server", "MS Access", "MySQL", "Datenbankdesign"]
+      skills: [
+        t('services.database.skills.sql'),
+        t('services.database.skills.access'),
+        t('services.database.skills.mysql'),
+        t('services.database.skills.design')
+      ]
     },
     {
       icon: <HeadsetIcon className="h-12 w-12 text-ipc-blue" />,
       title: t('services.support.title'),
       description: t('services.support.subtitle'),
       path: "/services/support",
-      skills: ["Helpdesk", "Problemanalyse", "Systemadministration"]
+      skills: [
+        t('services.support.skills.helpdesk'),
+        t('services.support.skills.analysis'),
+        t('services.support.skills.admin')
+      ]
     },
     {
       icon: <Laptop className="h-12 w-12 text-ipc-blue" />,
       title: t('services.admin.title'),
       description: t('services.admin.subtitle'),
       path: "/services/admin",
-      skills: ["Windows Server", "Active Directory", "Rollout"]
+      skills: [
+        t('services.admin.skills.windows'),
+        t('services.admin.skills.ad'),
+        t('services.admin.skills.rollout')
+      ]
+    }
+  ];
+
+  const additionalServices = [
+    {
+      icon: <Bot className="h-8 w-8 text-ipc-orange" />,
+      title: t('services.ai.title'),
+      description: t('services.ai.subtitle')
+    },
+    {
+      icon: <Shield className="h-8 w-8 text-ipc-orange" />,
+      title: t('services.security.title'),
+      description: t('services.security.subtitle')
+    },
+    {
+      icon: <Server className="h-8 w-8 text-ipc-orange" />,
+      title: t('services.server.title'),
+      description: t('services.server.subtitle')
+    },
+    {
+      icon: <Network className="h-8 w-8 text-ipc-orange" />,
+      title: t('services.network.title'),
+      description: t('services.network.subtitle')
     }
   ];
 
@@ -93,26 +129,13 @@ const Services = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
           className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
-          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
-            <Bot className="h-8 w-8 text-ipc-orange mb-4" />
-            <h3 className="text-lg font-semibold mb-2">KI-Integration</h3>
-            <p className="text-center text-gray-600">Moderne KI-Lösungen für optimierte Prozesse</p>
-          </div>
-          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
-            <Shield className="h-8 w-8 text-ipc-orange mb-4" />
-            <h3 className="text-lg font-semibold mb-2">IT-Sicherheit</h3>
-            <p className="text-center text-gray-600">Umfassende Sicherheitslösungen</p>
-          </div>
-          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
-            <Server className="h-8 w-8 text-ipc-orange mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Server-Management</h3>
-            <p className="text-center text-gray-600">Professionelle Serververwaltung</p>
-          </div>
-          <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
-            <Network className="h-8 w-8 text-ipc-orange mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Netzwerk-Services</h3>
-            <p className="text-center text-gray-600">Optimierte Netzwerklösungen</p>
-          </div>
+          {additionalServices.map((service, index) => (
+            <div key={index} className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
+              {service.icon}
+              <h3 className="text-lg font-semibold mb-2 mt-4">{service.title}</h3>
+              <p className="text-center text-gray-600">{service.description}</p>
+            </div>
+          ))}
         </motion.div>
       </div>
     </div>
