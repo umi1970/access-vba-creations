@@ -1,3 +1,10 @@
+
 User-agent: *
 Allow: /
+Allow: /services
+Allow: /services/*
+Allow: /contact
+Allow: /impressum
+Allow: /datenschutz
+Allow: /agb
 Sitemap: https://ipc24.de/sitemap.xml
