@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Bot, Zap, GitMerge, MessageSquare } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { BackgroundPaths } from "@/components/ui/background-paths";
 
 const AI = () => {
   const { t } = useLanguage();
@@ -31,18 +32,19 @@ const AI = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-12 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-24 pb-12">
+      <BackgroundPaths title={t('services.ai.title')} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             {t('services.ai.title')}
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             {t('services.ai.subtitle')}
           </p>
         </motion.div>
@@ -55,15 +57,15 @@ const AI = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300 bg-white/80 dark:bg-black/80 backdrop-blur-sm">
                 <CardHeader>
                   <div className="mb-4 flex justify-center">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-2xl font-bold text-center text-gray-900">
+                  <CardTitle className="text-2xl font-bold text-center text-gray-900 dark:text-white">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-center text-gray-600">
+                  <CardDescription className="text-center text-gray-600 dark:text-gray-300">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
