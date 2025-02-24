@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -10,6 +11,9 @@ import AI from './pages/services/AI';
 import Support from './pages/services/Support';
 import Admin from './pages/services/Admin';
 import Database from './pages/services/Database';
+import Security from './pages/services/Security';
+import Server from './pages/services/Server';
+import Network from './pages/services/Network';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import AGB from './pages/AGB';
@@ -32,6 +36,9 @@ function App() {
               <Route path="/services/support" element={<Support />} />
               <Route path="/services/admin" element={<Admin />} />
               <Route path="/services/database" element={<Database />} />
+              <Route path="/services/security" element={<Security />} />
+              <Route path="/services/server" element={<Server />} />
+              <Route path="/services/network" element={<Network />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/datenschutz" element={<Datenschutz />} />
               <Route path="/agb" element={<AGB />} />
