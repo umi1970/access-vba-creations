@@ -1,34 +1,32 @@
+
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Bot, Zap, GitMerge, MessageSquare } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const AI = () => {
   const { t } = useLanguage();
 
   const services = [
     {
-      icon: <Zap className="h-8 w-8" />,
+      icon: <Zap className="h-12 w-12 text-ipc-orange" />,
       title: t('services.ai.automation'),
-      description: t('services.ai.automation.desc'),
-      gradient: "from-blue-500 to-cyan-500"
+      description: t('services.ai.automation.desc')
     },
     {
-      icon: <Bot className="h-8 w-8" />,
+      icon: <Bot className="h-12 w-12 text-ipc-orange" />,
       title: t('services.ai.analysis'),
-      description: t('services.ai.analysis.desc'),
-      gradient: "from-purple-500 to-pink-500"
+      description: t('services.ai.analysis.desc')
     },
     {
-      icon: <GitMerge className="h-8 w-8" />,
+      icon: <GitMerge className="h-12 w-12 text-ipc-orange" />,
       title: t('services.ai.integration'),
-      description: t('services.ai.integration.desc'),
-      gradient: "from-green-500 to-emerald-500"
+      description: t('services.ai.integration.desc')
     },
     {
-      icon: <MessageSquare className="h-8 w-8" />,
+      icon: <MessageSquare className="h-12 w-12 text-ipc-orange" />,
       title: t('services.ai.chatbots'),
-      description: t('services.ai.chatbots.desc'),
-      gradient: "from-orange-500 to-red-500"
+      description: t('services.ai.chatbots.desc')
     }
   ];
 
@@ -56,15 +54,22 @@ const AI = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bg-gradient-to-r ${service.gradient} p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2`}
             >
-              <div className="flex flex-col items-center text-white">
-                <div className="mb-4 p-3 bg-white/10 rounded-full">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-white/90 text-center">{service.description}</p>
-              </div>
+              <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+                <CardHeader>
+                  <div className="mb-4 flex justify-center">
+                    {service.icon}
+                  </div>
+                  <CardTitle className="text-2xl font-bold text-center text-gray-900">
+                    {service.title}
+                  </CardTitle>
+                  <CardDescription className="text-center text-gray-600">
+                    {service.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                </CardContent>
+              </Card>
             </motion.div>
           ))}
         </div>
