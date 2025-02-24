@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { Network, Wifi, Cable, GitNetwork } from 'lucide-react';
+import { Network, Wifi, Cable, Activity } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const NetworkServices = () => {
@@ -24,7 +24,7 @@ const NetworkServices = () => {
       description: "Professionelle Netzwerkverkabelung nach modernsten Standards"
     },
     {
-      icon: <GitNetwork className="h-12 w-12 text-ipc-orange" />,
+      icon: <Activity className="h-12 w-12 text-ipc-orange" />,
       title: "Netzwerkmonitoring",
       description: "Kontinuierliche Überwachung und Optimierung Ihres Netzwerks"
     }
