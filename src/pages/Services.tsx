@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Database, Laptop, HeadsetIcon, Bot, Shield, Server, Network } from 'lucide-react';
@@ -48,22 +49,26 @@ const Services = () => {
     {
       icon: <Bot className="h-8 w-8 text-ipc-orange" />,
       title: t('services.ai.title'),
-      description: t('services.ai.subtitle')
+      description: t('services.ai.subtitle'),
+      path: "/services/ai"
     },
     {
       icon: <Shield className="h-8 w-8 text-ipc-orange" />,
       title: t('services.security.title'),
-      description: t('services.security.subtitle')
+      description: t('services.security.subtitle'),
+      path: "/services/security"
     },
     {
       icon: <Server className="h-8 w-8 text-ipc-orange" />,
       title: t('services.server.title'),
-      description: t('services.server.subtitle')
+      description: t('services.server.subtitle'),
+      path: "/services/server"
     },
     {
       icon: <Network className="h-8 w-8 text-ipc-orange" />,
       title: t('services.network.title'),
-      description: t('services.network.subtitle')
+      description: t('services.network.subtitle'),
+      path: "/services/network"
     }
   ];
 
@@ -130,11 +135,13 @@ const Services = () => {
           className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
         >
           {additionalServices.map((service, index) => (
-            <div key={index} className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm">
-              {service.icon}
-              <h3 className="text-lg font-semibold mb-2 mt-4">{service.title}</h3>
-              <p className="text-center text-gray-600">{service.description}</p>
-            </div>
+            <Link key={index} to={service.path}>
+              <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                {service.icon}
+                <h3 className="text-lg font-semibold mb-2 mt-4">{service.title}</h3>
+                <p className="text-center text-gray-600">{service.description}</p>
+              </div>
+            </Link>
           ))}
         </motion.div>
       </div>
