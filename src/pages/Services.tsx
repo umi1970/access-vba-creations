@@ -113,7 +113,7 @@ const Services = () => {
                   <div className={`relative overflow-hidden rounded-2xl bg-gradient-to-br ${service.gradient} p-8 h-full shadow-lg hover:shadow-2xl transition-all duration-300`}>
                     <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-white/10 blur-2xl transform rotate-45 group-hover:scale-150 transition-transform duration-500" />
                     
-                    <div className="relative z-10">
+                    <div className="relative z-10 text-center">
                       <div className="mb-6 p-3 inline-flex rounded-xl bg-white/10 backdrop-blur-lg">
                         {service.icon}
                       </div>
@@ -126,7 +126,7 @@ const Services = () => {
                         {service.description}
                       </p>
                       
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 justify-center">
                         {service.tags.map((tag, tagIndex) => (
                           <span
                             key={tagIndex}
@@ -157,7 +157,7 @@ const Services = () => {
                   <div className={`relative overflow-hidden rounded-xl bg-gradient-to-br ${service.gradient} p-6 h-full shadow-md hover:shadow-xl transition-all duration-300`}>
                     <div className="absolute top-0 right-0 -mt-4 -mr-4 h-16 w-16 rounded-full bg-white/10 blur-xl transform rotate-45 group-hover:scale-150 transition-transform duration-500" />
                     
-                    <div className="relative z-10">
+                    <div className="relative z-10 text-center">
                       <div className="mb-4 p-2 inline-flex rounded-lg bg-white/10 backdrop-blur-lg">
                         {service.icon}
                       </div>
