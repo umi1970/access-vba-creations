@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -10,7 +11,7 @@ const HeroSection = () => {
     <section 
       className="relative h-[80vh] bg-cover bg-center flex items-center"
       style={{
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1497366216548-37526070297c")',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
