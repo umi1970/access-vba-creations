@@ -1,3 +1,4 @@
+
 import { Translations } from '../types/translations';
 
 export const deTranslations: Translations = {
@@ -39,6 +40,8 @@ export const deTranslations: Translations = {
   'services.database.performance': 'Performance-Optimierung',
   'services.database.dataModeling': 'Datenmodellierung',
   'services.database.migration': 'Datenmigration',
+  'services.database.legacyMigration': 'Legacy-Datenbank-Migration',
+  'services.database.legacyMigration.desc': 'Migration von Legacy-Datenbanken (dBase, Clipper, DOS) zu modernen Datenbanksystemen',
   'services.database.backup': 'Backup & Recovery',
   'services.database.security': 'Datenbanksicherheit',
   'services.database.tuning': 'Datenbanktuning',

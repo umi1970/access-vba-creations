@@ -1,3 +1,4 @@
+
 export type TranslationKey = 
   | 'nav.home'
   | 'nav.services'
@@ -37,6 +38,8 @@ export type TranslationKey =
   | 'services.database.performance'
   | 'services.database.dataModeling'
   | 'services.database.migration'
+  | 'services.database.legacyMigration'
+  | 'services.database.legacyMigration.desc'
   | 'services.database.backup'
   | 'services.database.security'
   | 'services.database.tuning'
